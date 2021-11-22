@@ -73,7 +73,7 @@ export default {
         font-weight: 600;
         font-size: 1.4rem;
         .total-reviews__count{
-          color: #7f8c8d;
+          color: $dark-grey;
         }
       }
     }
