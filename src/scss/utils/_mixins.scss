@@ -1,8 +1,27 @@
-@mixin card-small($area) {
-    border-radius: 2%;
+@mixin card($area) {
+    border-radius: .5rem;
     grid-area: $area;
     background-color: #FFFFFF;
-    height: 25rem;
     box-shadow: 3px 3px 12px rgba(189, 195, 199,1.0);
     padding: 1.5rem;
+}
+
+@mixin overview-title-container {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    margin-bottom: 3rem;
+}
+
+@mixin circle-icon($color) {
+    margin-right: 1rem;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background-color: $color;
+}
+
+@mixin star-icon {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: $yellow;
 }
