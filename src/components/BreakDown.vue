@@ -3,14 +3,24 @@
       <div class="breakdown__title-container">
           <div class="circle"></div>
           <h2 class="title">Rating Breakdown</h2>
-      </div>    
+      </div>
+      <div class='breakdown__reviews'>
+          <rating-bar/>
+          <rating-bar/>
+          <rating-bar/>
+          <rating-bar/>
+          <rating-bar/>
+      </div>
       
   </div>
 </template>
 
 <script>
+import ratingBar from './RatingBar.vue'
 export default {
-
+    components: {
+    ratingBar
+  }
 }
 </script>
 
@@ -22,6 +32,9 @@ export default {
             .circle{
                 @include circle-icon($green)
             }
+        }
+        &__reviews{
+            
         }
         
     }
