@@ -1,0 +1,8 @@
+@mixin card-small($area) {
+    border-radius: 2%;
+    grid-area: $area;
+    background-color: #FFFFFF;
+    height: 25rem;
+    box-shadow: 3px 3px 12px rgba(189, 195, 199,1.0);
+    padding: 1.5rem;
+}

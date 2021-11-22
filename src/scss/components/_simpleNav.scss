@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8rem;
+    justify-content: center;
+    padding: 0 1.2rem 0 1.2rem;
+    background-color: #ffffff;
+    &__icon-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 140rem;
+      width: 100%;
+        .icon{
+          height: 5rem;
+          width: 5rem;
+        }
+        .company-name{
+          font-family: 'Comforter', sans-serif;
+          color: #000000;
+          font-weight: bold;
+          font-size: 2.5rem;
+        }
+    }
+  }
