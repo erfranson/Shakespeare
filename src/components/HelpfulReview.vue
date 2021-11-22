@@ -12,8 +12,8 @@
             <div class="reviewer__name">
                 <h3>Trevor Noah</h3> 
             </div>
-            <div class="reviewer__post-date">
-
+            <div class="reviewer__post-info">
+                <p>October 12, 2021</p>
             </div>
         </div>
         <div class="review">
@@ -53,7 +53,6 @@ export default {
         &__content{
             display: flex;
             flex-direction: row;
-            align-items: center;
             justify-content: space-between;
             .reviewer{
                 display: flex;
@@ -73,10 +72,12 @@ export default {
 
                 }
                 &__name{
-                    color: $red;
+                    color: $blue;
+                    font-size: 1.2rem
                 }
-                &__post-date{
-
+                &__post-info{
+                    color: $dark-grey;
+                    font-size: 1.2rem;
                 }
             }
             .review{
@@ -103,7 +104,6 @@ export default {
                 &__post{
                     font-size: 1.4rem;
                     color: $dark-grey;
-                    font-weight: 600;
                 }
                 @media only screen and (max-width: $xl){
                     width: 85%;
